@@ -10,7 +10,7 @@
   },
   "main": "server.js",
   "scripts": {
-    "dev": "LOGGING=true ./node_modules/.bin/nodemon server.js",
+    "dev": "./node_modules/.bin/nodemon server.js",
     "start": "node server.js",
     "test": "NODE_ENV=test ./node_modules/mocha/bin/mocha --exit",
     "lint": "./node_modules/.bin/eslint --ext .js db scripts src test"
