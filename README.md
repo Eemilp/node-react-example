@@ -14,6 +14,12 @@ This is the repository for a simple chat application using
     npm install
     npm run dev
 
+## Node frontend when executing on own computer in localhost
+    cd frontend
+    npm install
+    export ENDPOINT="http://95.216.143.29"
+    npm start
+
 ## Docker
     docker-compose build
     docker-compose up

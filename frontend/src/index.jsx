@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 
 import './assets/stylesheets/style.css'
 
-const baseURL = process.env.ENDPOINT;
+const baseURL = "http://95.216.143.29";
 
 /****** ADD YOUR CODE AFTER THIS LINE ******/
 
@@ -22,6 +22,7 @@ const getChats = async () => {
 
 
 const Chats = (props) => {
+  console.log(props.chats)
   const ChatList = props.chats.map(c => <li>{c.message}</li>);
   return <ul>{ChatList}</ul>; 
 };
