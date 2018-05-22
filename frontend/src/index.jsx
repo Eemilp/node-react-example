@@ -23,7 +23,7 @@ const getChats = async () => {
 
 const Chats = (props) => {
   console.log(props.chats)
-  const ChatList = props.chats.map(c => <li>Temperature: {c.message}</li><li>Time: {c.createdAt}</li>);
+  const ChatList = props.chats.map(c => <li>Temperature: {c.message} Time: {c.createdAt}</li>);
   return <ul>{ChatList}</ul>; 
 };
 
