@@ -11,7 +11,7 @@ const sequelize = new Sequelize({
 /** INIT CHAT TABLE WITH MESSAGE **/
 
 const Chat = sequelize.define('chats', {
-  message: round(round(round(Sequelize.FLOAT))),
+  message: Sequelize.INTEGER,
   data: Sequelize.TEXT,
 }, {
   timestamps: true,
