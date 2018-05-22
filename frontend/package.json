@@ -26,6 +26,9 @@
     "webpack-dev-server": "^2.11.1"
   },
   "dependencies": {
+    "ins": "0.0.0",
+    "moment": "^2.22.1",
+    "npm": "^6.0.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   }
