@@ -3,6 +3,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
+import moment from  'moment'
+
 import './assets/stylesheets/style.css'
 
 const baseURL = "http://95.216.143.29";
