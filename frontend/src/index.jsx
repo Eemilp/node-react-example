@@ -25,9 +25,25 @@ const getChats = async () => {
 
 const Chats = (props) => {
   console.log(props.chats)
-  const ChatList = props.chats.map(c => <li><b>Temperature:</b> {Math.round(parseFloat(c.message))}°C Time: moment.{c.createdAt}</li>);
+  const ChatList = props.chats.map(c => <li><b>Temperature:</b> {Math.round(parseFloat(c.message))}°C <b> Time: </b> {convertToTime(c.createdAt)}</li>);
   return <ul>{ChatList}</ul>; 
 };
+
+function convertToTime(t)
+{
+  var date = new Date(t);
+
+  var hours = date.getHours();
+
+  var day = date.getDate();
+
+  var month = date.getMonth();
+
+  var minutes = "0" + date.getMinutes();
+
+  var formattedTime = day + '/' + month + '/' + date.getFullYear() + '  ' + hours + ':' + minutes.substr(-2);
+  return formattedTime;
+}
 
 class App extends Component {
   state = { chats: [] }
